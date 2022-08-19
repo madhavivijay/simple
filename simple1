@@ -1,0 +1,18 @@
+pipeline{
+  agents{
+    stages{
+      stage{
+        steps{
+        
+        }
+      
+      
+      }
+
+
+}
+  
+  
+  
+  }
+}
