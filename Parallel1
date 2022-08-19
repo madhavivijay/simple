@@ -1,6 +1,7 @@
 pipeline {
   agent none
     stages {
+      stage ('buildtest') {
       parallel {
         stage ('build') {
             agent { label 'cslave'}
@@ -16,4 +17,5 @@ pipeline {
               }
           }
       }
+}
 }
