@@ -1,10 +1,10 @@
 pipeline {
-  agent {label 'jslave'}
+  agent { label 'jslave' }
     stages {
       stage('build') {
         steps {
               git branch: 'main', url: 'https://github.com/madhavivijay/simple.git'
-              sh 'mvn clean install'
+              sh 'mvn clean package'
         }
       }
       stage('deploy') {
