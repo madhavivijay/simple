@@ -9,7 +9,7 @@ pipeline {
       }
       stage('deploy') {
           steps {
-            echo "deploy"        
+            sh 'sudo cp -r /home/ec2-user/workspace/hello/target/works-with-heroku-1.0.war  /home/ec2-user/apache-tomcat-9.0.65/webapps 
           }
       }  
       }
